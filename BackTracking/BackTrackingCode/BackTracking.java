@@ -79,7 +79,7 @@ public static void nQueens(char board[][],int row){
     //base
     if(row==board.length){
         printBoard(board);
-        //instead of above line => count++
+        //instead of above line => count++ and return true
         return;
     }
     //colm loop
@@ -92,6 +92,7 @@ public static void nQueens(char board[][],int row){
         board[row][j]='.';//BackTracking
         }
     }
+    //return false if count and print vala case
 }
 
 public static void printBoard(char board[][]){
